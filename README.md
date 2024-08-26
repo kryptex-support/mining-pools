@@ -1,6 +1,6 @@
 # Fractal Bitcoin Mining Pools
 
-Mining pools definition used on https://mempool.fractalbitcoin.io/mining/pools
+Mining pools definition used on https://mempool.fractalbitcoin.io/graphs/mining/pools
 
 # Contributing
 
@@ -10,7 +10,7 @@ Contributions welcome. All changes must be applied in `pools-v2.json` file.
 
 Regardless of the choosen method, we recommend adding a appropriate slug to each
 new mining pool you add to `pools-v2.json`. The slug will be used as a unique tag for
-the mining pool, for example in the public facing urls like https://mempool.fractalbitcoin.io/mining/pool/foundryusa (here `foundryusa` is the slug).
+the mining pool, for example in the public facing urls like https://mempool.fractalbitcoin.io/mining/pool/fairpool (here `fairpool` is the slug).
 
 You can specify mining pool slugs in the `slugs` object in `pools-v2.json`. If you
 don't specify one, we will automatically generate one [as such](https://github.com/mempool/mempool/blob/02820b0e6836c4202c2e346195e8aace357e3483/backend/src/api/pools-parser.ts#L106-L110).
@@ -18,10 +18,8 @@ don't specify one, we will automatically generate one [as such](https://github.c
 ```javascript
 if (slug === undefined) {
   // Only keep alphanumerical
-  slug = poolNames[i].replace(/[^a-z0-9]/gi, "").toLowerCase();
-  logger.warn(
-    `No slug found for '${poolNames[i]}', generating it => '${slug}'`
-  );
+  slug = poolNames[i].replace(/[^a-z0-9]/gi, '').toLowerCase()
+  logger.warn(`No slug found for '${poolNames[i]}', generating it => '${slug}'`)
 }
 ```
 
@@ -50,12 +48,12 @@ Each coinbase tag will be use as a regex to match blocks with their mining pool.
 This is how we use it in mempool application. You can see the code [here](https://github.com/mempool/mempool/blob/02820b0e6836c4202c2e346195e8aace357e3483/backend/src/api/blocks.ts#L238-L246).
 
 ```javascript
-const regexes: string[] = JSON.parse(pools[i].regexes);
+const regexes: string[] = JSON.parse(pools[i].regexes)
 for (let y = 0; y < regexes.length; ++y) {
-  const regex = new RegExp(regexes[y], "i");
-  const match = asciiScriptSig.match(regex);
+  const regex = new RegExp(regexes[y], 'i')
+  const match = asciiScriptSig.match(regex)
   if (match !== null) {
-    return pools[i];
+    return pools[i]
   }
 }
 ```
@@ -199,3 +197,7 @@ the following backend variables:
   }
 }
 ```
+
+## Add pool icon
+
+You can submit the mining pool logo to https://github.com/fractal-bitcoin/mempool/tree/fractal/frontend/src/resources/mining-pools The logo must be named as the slugId and in SVG format.
