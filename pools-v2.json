@@ -1236,5 +1236,80 @@
     "addresses": ["1HCAb2h89bUinm6QZrAPpfbk4ySBrT2V4w"],
     "tags": ["/Neopool/"],
     "link": "https://neopool.com/"
+  },
+
+  {
+    "id": 1001,
+    "name": "Fair Pool",
+    "addresses": ["15ECybevEruEP38DJKv8UfvHkorohPywuZ"],
+    "tags": [],
+    "link": "https://fractalbitcoin.io"
+  },
+  {
+    "id": 1002,
+    "name": "Solo Fractal",
+    "addresses": [
+      "bc1px5pm7astj83eyppe5h0qp7egwnkqw427y7e9tpcn7j2jrxd7q8pq03lj9a",
+      "bc1ph5aw92rxryuqa7sykfk7sc3ff7cvq08e2lalcu3v2x7va7hz0kesp09x4q"
+    ],
+    "tags": [
+      "/mint by fractalpools.com/",
+      "/mint by fractalpool.com/",
+      "/mint by solofractal.io/"
+    ],
+    "link": "https://solofractal.io"
+  },
+  {
+    "id": 1003,
+    "name": "Mining Pool",
+    "addresses": ["1A2zXLi951cF8FiFx5KUm7f5ezbbxDfQvX"],
+    "tags": ["MiningPool"],
+    "link": ""
+  },
+  {
+    "id": 1004,
+    "name": "6h6d",
+    "addresses": ["bc1qm9whpxrh47ly2xxcmdvr4mfe76uxgh0x9c6h6d"],
+    "tags": [],
+    "link": ""
+  },
+  {
+    "id": 1005,
+    "name": "BlessTiger",
+    "addresses": ["17cjkjmwQ5f3VFudnffThT5WqJLZQhHVn6"],
+    "tags": [],
+    "link": ""
+  },
+  {
+    "id": 1006,
+    "name": "ckpool",
+    "addresses": [
+      "bc1pljxwuj2uzyyqsc8xvgerad7pjxs7qfwpeq2082a0urcp37y4sutqpmdu97"
+    ],
+    "tags": ["/mined by satoshi/"],
+    "link": ""
+  },
+  {
+    "id": 1007,
+    "name": "Godd Lab",
+    "addresses": [
+      "bc1p8dczv8vwd3ellfy8xy2h2zmxjt6x75yhyv9z5vq7sw47f0smut3ssuhlqm"
+    ],
+    "tags": ["Godd Lab"],
+    "link": ""
+  },
+  {
+    "id": 1008,
+    "name": "OP_NET",
+    "addresses": ["bc1q26nglpyc67thjnytz9cdvugy7a92d4nrh3n8wd"],
+    "tags": ["OP_NET"],
+    "link": ""
+  },
+  {
+    "id": 1009,
+    "name": "mbmH",
+    "addresses": ["1BCyk9HXvuGnMU8jDTbF9mFdiLmPNFmbmH"],
+    "tags": [],
+    "link": ""
   }
 ]
