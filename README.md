@@ -1,6 +1,6 @@
-# Bitcoin Mining Pools
+# Fractal Bitcoin Mining Pools
 
-Mining pools definition used on https://mempool.space/mining/pools
+Mining pools definition used on https://mempool.fractalbitcoin.io/mining/pools
 
 # Contributing
 
@@ -10,7 +10,7 @@ Contributions welcome. All changes must be applied in `pools-v2.json` file.
 
 Regardless of the choosen method, we recommend adding a appropriate slug to each
 new mining pool you add to `pools-v2.json`. The slug will be used as a unique tag for
-the mining pool, for example in the public facing urls like https://mempool.space/mining/pool/foundryusa (here `foundryusa` is the slug).
+the mining pool, for example in the public facing urls like https://mempool.fractalbitcoin.io/mining/pool/foundryusa (here `foundryusa` is the slug).
 
 You can specify mining pool slugs in the `slugs` object in `pools-v2.json`. If you
 don't specify one, we will automatically generate one [as such](https://github.com/mempool/mempool/blob/02820b0e6836c4202c2e346195e8aace357e3483/backend/src/api/pools-parser.ts#L106-L110).
@@ -18,8 +18,10 @@ don't specify one, we will automatically generate one [as such](https://github.c
 ```javascript
 if (slug === undefined) {
   // Only keep alphanumerical
-  slug = poolNames[i].replace(/[^a-z0-9]/gi, '').toLowerCase();
-  logger.warn(`No slug found for '${poolNames[i]}', generating it => '${slug}'`);
+  slug = poolNames[i].replace(/[^a-z0-9]/gi, "").toLowerCase();
+  logger.warn(
+    `No slug found for '${poolNames[i]}', generating it => '${slug}'`
+  );
 }
 ```
 
@@ -29,7 +31,7 @@ You can add a new mining pool by specifying the coinbase tag they're using in
 the coinbase transaction.
 
 To add a new pool, you must add a new JSON object in the `coinbase_tags` object.
-Note that you can add multiple tags for the same mining pool, but you *must* use
+Note that you can add multiple tags for the same mining pool, but you _must_ use
 the exact same values for `name` and `link` in each new entry.
 For example:
 
@@ -46,10 +48,11 @@ For example:
 
 Each coinbase tag will be use as a regex to match blocks with their mining pool.
 This is how we use it in mempool application. You can see the code [here](https://github.com/mempool/mempool/blob/02820b0e6836c4202c2e346195e8aace357e3483/backend/src/api/blocks.ts#L238-L246).
+
 ```javascript
 const regexes: string[] = JSON.parse(pools[i].regexes);
 for (let y = 0; y < regexes.length; ++y) {
-  const regex = new RegExp(regexes[y], 'i');
+  const regex = new RegExp(regexes[y], "i");
   const match = asciiScriptSig.match(regex);
   if (match !== null) {
     return pools[i];
@@ -63,7 +66,7 @@ You can add a new mining pool by specifying the receiving address they're using 
 the coinbase transaction to receive the miner reward.
 
 To add a new pool, you must add a new JSON object in the `payout_addresses` object.
-Note that you can add multiple addresses for the same mining pool, but you *must* use
+Note that you can add multiple addresses for the same mining pool, but you _must_ use
 the exact same values for `name` and `link` in each new entry.
 For example:
 
@@ -81,6 +84,7 @@ For example:
 Each address will be use to match blocks with their mining pool by matching the
 coinbase transaction output address.
 This is how we use it in mempool application. You can see the code [here](https://github.com/mempool/mempool/blob/02820b0e6836c4202c2e346195e8aace357e3483/backend/src/api/blocks.ts#L230-L236).
+
 ```javascript
 const address = txMinerInfo.vout[0].scriptpubkey_address;
 for (let i = 0; i < pools.length; ++i) {
@@ -125,6 +129,7 @@ following (using today's `pools-v2.json` as reference):
     "link" : "https://foundrydigital.com/"
 },
 ```
+
 ```json
 // Original
 "1FFxkVijzvUPUeHgkFjBk2Qw8j3wQY2cDw" : {
@@ -166,6 +171,7 @@ You can find the re-indexing logic [here](https://github.com/mempool/mempool/blo
 
 You can enable/disable this behavior using by setting the following backend
 configuration variable:
+
 ```
 {
   "MEMPOOL": {
@@ -182,14 +188,14 @@ the latest mining pool data.
 ## Mining pool definition
 
 When the mempool backend starts, we automatically fetch the latest `pools-v2.json`
-version from github. By default the url points to https://github.com/mempool/mining-pools/blob/master/pools-v2.json but you can configure it to points to another repo by setting
+version from github. By default the url points to https://github.com/fractal-bitcoin/mining-pools/blob/fractal/pools-v2.json but you can configure it to points to another repo by setting
 the following backend variables:
 
 ```
 {
   "MEMPOOL": {
-    'POOLS_JSON_URL': 'https://raw.githubusercontent.com/mempool/mining-pools/master/pools-v2.json',
-    'POOLS_JSON_TREE_URL': 'https://api.github.com/repos/mempool/mining-pools/git/trees/master'
+    'POOLS_JSON_URL': 'https://raw.githubusercontent.com/fractal-bitcoin/mining-pools/fractal/pools-v2.json',
+    'POOLS_JSON_TREE_URL': 'https://api.github.com/repos/fractal-bitcoin/mining-pools/git/trees/fractal'
   }
 }
 ```
