@@ -1240,10 +1240,13 @@
 
   {
     "id": 1001,
-    "name": "Fair Pool",
-    "addresses": ["15ECybevEruEP38DJKv8UfvHkorohPywuZ"],
+    "name": "FairPool",
+    "addresses": [
+      "15ECybevEruEP38DJKv8UfvHkorohPywuZ",
+      "1LgwV2Rjqh9JUU3H5m8Wn4jacnFiSb2LdC"
+    ],
     "tags": [],
-    "link": "https://fractalbitcoin.io"
+    "link": "https://fairpool.network"
   },
   {
     "id": 1002,
