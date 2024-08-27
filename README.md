@@ -198,6 +198,6 @@ the following backend variables:
 }
 ```
 
-## Add pool icon
+## Add pool logo
 
-You can submit the mining pool logo to https://github.com/fractal-bitcoin/mempool/tree/fractal/frontend/src/resources/mining-pools The logo must be named as the slugId and in SVG format.
+You can submit the mining pool logo to https://github.com/fractal-bitcoin/mining-pool-logos The logo must be named as the slugId and in SVG format.
