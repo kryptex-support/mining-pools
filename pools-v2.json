@@ -1245,8 +1245,8 @@
       "15ECybevEruEP38DJKv8UfvHkorohPywuZ",
       "1LgwV2Rjqh9JUU3H5m8Wn4jacnFiSb2LdC"
     ],
-    "tags": [],
-    "link": "https://fairpool.network"
+    "tags": ["/FairPool/"],
+    "link": "https://www.fairpool.network"
   },
   {
     "id": 1002,
@@ -1321,5 +1321,19 @@
     "addresses": ["1MpPPW6PLJi26UaVR8fn11bx8ivhyjbrcD"],
     "tags": [],
     "link": ""
+  },
+  {
+    "id": 1011,
+    "name": "NodeCattel",
+    "addresses": ["1HFkWD3X6piTj923EngN7Hp3fuJnc4W7Va"],
+    "tags": ["/NodeCattel/"],
+    "link": "https://nodecattel.xyz"
+  },
+  {
+    "id": 1012,
+    "name": "MoonX",
+    "addresses": [],
+    "tags": ["MoonX_Mining_Pool", "MoonX.space", "Fractal_Mining_Pool"],
+    "link": "https://moonx.space"
   }
 ]
