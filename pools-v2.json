@@ -1325,8 +1325,11 @@
   {
     "id": 1011,
     "name": "NodeCattel",
-    "addresses": ["1HFkWD3X6piTj923EngN7Hp3fuJnc4W7Va"],
-    "tags": ["/NodeCattel/"],
+    "addresses": [
+      "1HFkWD3X6piTj923EngN7Hp3fuJnc4W7Va",
+      "bc1qlds9uamk7qtrdetukq3geuzps6wwjxxm7gddv4"
+    ],
+    "tags": ["/NodeCattel/", "/mined by nodecattel/"],
     "link": "https://nodecattel.xyz"
   },
   {
