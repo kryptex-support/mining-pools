@@ -1338,5 +1338,14 @@
     "addresses": [],
     "tags": ["MoonX_Mining_Pool", "MoonX.space", "Fractal_Mining_Pool"],
     "link": "https://moonx.space"
+  },
+  {
+    "id": 1013,
+    "name": "MaxiPool",
+    "addresses": [
+      "3BLVhKwbHQ8Cfoa77GHX8Y9LEe9yS1AXoA"
+    ],
+    "tags": ["Maxipool", "/MaxiPool/", "/mined by maxipool.io/"],
+    "link": "https://maxipool.io/"
   }
 ]
