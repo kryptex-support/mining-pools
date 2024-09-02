@@ -1343,7 +1343,8 @@
     "id": 1013,
     "name": "MaxiPool",
     "addresses": [
-      "3BLVhKwbHQ8Cfoa77GHX8Y9LEe9yS1AXoA"
+      "3BLVhKwbHQ8Cfoa77GHX8Y9LEe9yS1AXoA",
+      "33Qa2GNTeM5X51tFwJ2ciffBS7jeomDpZo"
     ],
     "tags": ["MaxiPool", "/MaxiPool/", "/mined by maxipool.io/"],
     "link": "https://maxipool.io/"
