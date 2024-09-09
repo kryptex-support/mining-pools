@@ -1351,5 +1351,12 @@
     ],
     "tags": ["MaxiPool", "/MaxiPool/", "/mined by maxipool.io/"],
     "link": "https://maxipool.io/"
+  },
+  {
+    "id": 1014,
+    "name": "jorgefromwalmart",
+    "addresses": ["bc1qtatq4hj5nhmtzaf48kg60ryj2cx8ed4kwmz9el"],
+    "tags": ["jorgefromwalmart"],
+    "link": ""
   }
 ]
