@@ -1358,5 +1358,12 @@
     "addresses": ["bc1qtatq4hj5nhmtzaf48kg60ryj2cx8ed4kwmz9el"],
     "tags": ["jorgefromwalmart"],
     "link": ""
+  },
+    {
+    "id": 1015,
+    "name": "ChainforgeLabs",
+    "addresses": [],
+    "tags": ["ChainforgeLabs"],
+    "link": "https://chainforgelabs.com"
   }
 ]
