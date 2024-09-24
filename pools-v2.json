@@ -601,9 +601,9 @@
   {
     "id": 73,
     "name": "ViaBTC",
-    "addresses": [],
-    "tags": ["/ViaBTC/", "viabtc.com deploy"],
-    "link": "https://viabtc.com"
+    "addresses": ["bc1qv5nkx9huw5ekjwckunnlchqxaaa8vrq7a3ullv"],
+    "tags": ["/ViaBTC/", "/mined by viabtc/"],
+    "link": "https://www.viabtc.com/"
   },
   {
     "id": 74,

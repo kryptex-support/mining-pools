@@ -360,13 +360,13 @@
             "name" : "TATMAS Pool",
             "link" : "https://tmsminer.com/"
         },
-        "viabtc.com deploy" : {
+        "/mined by viabtc/" : {
             "name": "ViaBTC",
-            "link": "https://viabtc.com"
+            "link": "https://www.viabtc.com/"
         },
         "/ViaBTC/" : {
             "name": "ViaBTC",
-            "link": "http://viabtc.com/"
+            "link": "https://www.viabtc.com/"
         },
         "/ConnectBTC - Home for Miners/" : {
             "name" : "ConnectBTC",
@@ -1337,6 +1337,10 @@
         "1BGFwRzjCfRR7EvRHnzfHyFjGR8XiBDFKa" : {
             "name" : "PEGA Pool",
             "link" : "https://www.pega-pool.com"
+        },
+        "bc1qv5nkx9huw5ekjwckunnlchqxaaa8vrq7a3ullv": {
+            "name": "ViaBTC",
+            "link": "https://www.viabtc.com/"
         }
     },
     "slugs": {
