@@ -1359,11 +1359,21 @@
     "tags": ["jorgefromwalmart"],
     "link": ""
   },
-    {
+  {
     "id": 1015,
     "name": "ChainforgeLabs",
     "addresses": [],
     "tags": ["ChainforgeLabs"],
     "link": "https://chainforgelabs.com"
+  },
+  {
+    "id": 1016,
+    "name": "Mining-Dutch",
+    "addresses": [
+      "1PsrPYRGNSSt1zy5vdxKWmAGMRguW6zmSE",
+      "1DfqCmgXBZEkT696Z3LTZs4VFvSxgZyxtq"
+    ],
+    "tags": ["mining-dutch"],
+    "link": "https://www.mining-dutch.nl/"
   }
 ]
